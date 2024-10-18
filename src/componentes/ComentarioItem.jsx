@@ -20,7 +20,7 @@ const ComentarioItem = ({ comentario, calificacion, id, handleDelete}) => {
     }
 
   return (
-    <Card reverse={false}>
+    <Card reverse={true}>
         <div className='num-display'>{rating}</div>
         <button onClick={ ()=> handleDelete(identificacion) }
             className='close'

@@ -1,8 +1,8 @@
 import React from 'react';
-import Comentarioitem from './ComentarioItem';
+import ComentarioItem from './ComentarioItem'; // Asegúrate de que el nombre sea correcto
 
 function ComentarioLista({ comments, handleDelete }) {
-  if (comments.length === 0 || !comments) {
+  if (!comments || comments.length === 0) {
     return <p>No hay comentarios</p>;
   }
 
@@ -10,7 +10,7 @@ function ComentarioLista({ comments, handleDelete }) {
     <div className='comments'>
       <ul>
         {comments.map((comentario) => (
-          <Comentarioitem
+          <ComentarioItem
             key={comentario.id}
             comentario={comentario.comentario}
             calificacion={comentario.calificacion}

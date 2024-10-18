@@ -19,7 +19,7 @@ function App() {
   };
 
   const titulo = "App de comentarios";
-  const Autor = "Julian Ospina";
+  const Autor = "Richard Sanchez";
   const Ficha = "2902093";
   const Centro = "CGMLTI";
 
